@@ -1,0 +1,14 @@
+'''This code shows items a player can obtain at different levels. Notice that the rock is not attainable at level 2.'''
+
+
+
+items = ['Wand', 'Rock', 'Pogo Stick']
+levels = [1, 2, 3]
+for level in levels:
+    for item in items:
+        if level == 2 and item == 'Rock':
+            continue
+        else:
+            print(f"You can get a {item} at level {level}.")
+
+print(__doc__)
