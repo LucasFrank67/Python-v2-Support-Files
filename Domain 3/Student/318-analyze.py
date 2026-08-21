@@ -7,4 +7,5 @@ with open('318-message.text','w+') as message:
     message.write('Testing file for player configuration\n')
     message.write('Testing file for player score\n')
     print('File created')
+    message.seek(0)
     print(message.read())
